@@ -28,39 +28,41 @@ body {
 }
 
 .logo {
-    padding: 0 25px 30px;
+    padding: 0 25px 20px;
     border-bottom: 1px solid #e9ecef;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
+    height: auto;
 }
 
 .sidebar-toggle {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #e9ecef;
-    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 16px;
-    color: #6c757d;
+    font-size: 18px;
+    color: #495057;
     position: absolute;
-    right: -15px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: -16px;
+    top: 10px;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-toggle:hover {
     background-color: #f8f9fa;
-    border-color: #dee2e6;
-    color: #495057;
+    border-color: #adb5bd;
+    color: #212529;
+    transform: scale(1.05);
 }
 
 .sidebar.collapsed {
@@ -95,6 +97,8 @@ body {
     font-weight: 600;
     font-size: 28px;
     letter-spacing: -0.5px;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .logo .vin {
